@@ -1,4 +1,4 @@
-import request from '../../utils/request'
+import {request} from '../../utils/request'
 
 // pages/home/home.js
 Page({
@@ -7,27 +7,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-
-  },
-
-  handleGetTap() {
-    request({ url: "/users" }).then((res) => {
-      console.log(res);
-    })
-  },
-  handlePostTap() {
-    request({ url: '/users' }).then(res => {
-      console.log(res);
-    }).catch(err => {
-      console.error(err);
-    })
+    BASE_URL: '',
+    looplist: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    // 获取小程序全局实例，将全局基地址赋值到页面data
+    this.setData({
+      BASE_URL: getApp().globalData.BASE_URL
+    });
+    this.renderSwiper()
+  },
 
+  renderSwiper() {
+    request({ url: '/recommends' }).then(res => {
+      console.log(res);
+      this.setData({
+        looplist: res
+      })
+    }).catch(err => {
+      console.error(err);
+    })
   },
 
   /**

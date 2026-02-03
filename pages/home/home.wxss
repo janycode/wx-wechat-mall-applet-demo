@@ -1,1 +1,7 @@
 /* pages/home/home.wxss */
+swiper image {
+  width: 100%;
+}
+swiper {
+  height: 297rpx; /* 图片148px高度，基于 iphone6 设置2倍，就是图片1:1显示 */
+}

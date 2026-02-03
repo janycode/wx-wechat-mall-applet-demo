@@ -1,6 +1,5 @@
 // /utils/request.js
-// 基地址
-var BASE_URL = "http://localhost:5000"
+const BASE_URL = "http://localhost:5000";
 function request(params) {
   // wx.showLoading: https://developers.weixin.qq.com/miniprogram/dev/api/ui/interaction/wx.showLoading.html
   // 显示 loading
@@ -23,4 +22,7 @@ function request(params) {
   })
 }
 
-module.exports = request
+module.exports = {
+  request, // 请求封装
+  BASE_URL // 暴露基地址
+};

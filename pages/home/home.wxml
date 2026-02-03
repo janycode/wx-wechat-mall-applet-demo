@@ -1,3 +1,6 @@
 <!--pages/home/home.wxml-->
-<button bind:tap="handleGetTap">ajax-get</button>
-<button bind:tap="handlePostTap">ajax-post</button>
+<swiper indicator-dots="{{true}}" circular="{{true}}" autoplay="{{true}}" interval="2000">
+  <swiper-item wx:for="{{looplist}}" wx:key="index">
+    <image src="{{BASE_URL + item.url}}" mode="widthFix"/>
+  </swiper-item>
+</swiper>
