@@ -1,4 +1,4 @@
-import {request} from '../../utils/request'
+import { request } from '../../utils/request'
 
 // pages/home/home.js
 Page({
@@ -11,7 +11,7 @@ Page({
     looplist: [],
     goodlist: [],
     currentPage: 1,
-    goodTotal: 0
+    goodTotal: 0,
   },
 
   /**
@@ -110,5 +110,9 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  handleSearchEvent() {
+    console.log("搜索处理");
   }
 })

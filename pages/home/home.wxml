@@ -1,13 +1,22 @@
 <!--pages/home/home.wxml-->
+<!-- 轮播 -->
 <swiper indicator-dots="{{true}}" circular="{{true}}" autoplay="{{true}}" interval="2000">
   <swiper-item wx:for="{{looplist}}" wx:key="index">
     <image src="{{BASE_URL + item.url}}" mode="widthFix" />
   </swiper-item>
 </swiper>
 
+<!-- 搜索框 + sticky 吸顶效果(375宽度的机型上不生效，原因未知，可能是组件库BUG) -->
+<mp-sticky offset-top="0">
+    <view style="width: 100vw">
+      <mysearch bindSearchEvent="handleSearchEvent"></mysearch>
+    </view>
+</mp-sticky>
+
+<!-- 列表 -->
 <view wx:for="{{goodlist}}" wx:key="index" class="goodbox">
   <image src="{{BASE_URL + item.poster}}" mode="widthFix" />
   <view>{{item.title}}</view>
   <view>价格：<text style="color: red">￥{{item.price}}</text></view>
-  <view>好评率：{{item.goodcomment}}</view>
+  <view>好评率：<text style="color: green">{{item.goodcomment}}</text></view>
 </view>
