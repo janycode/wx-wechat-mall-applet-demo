@@ -14,7 +14,7 @@
 </mp-sticky>
 
 <!-- 列表 -->
-<view wx:for="{{goodlist}}" wx:key="index" class="goodbox">
+<view wx:for="{{goodlist}}" wx:key="index" class="goodbox" bindtap="handleGoToDetail" data-id="{{item.id}}" data-title="{{item.title}}">
   <image src="{{BASE_URL + item.poster}}" mode="widthFix" />
   <view>{{item.title}}</view>
   <view>价格：<text style="color: red">￥{{item.price}}</text></view>

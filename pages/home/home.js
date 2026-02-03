@@ -50,6 +50,17 @@ Page({
     })
   },
 
+  handleGoToDetail(evt) {
+    //wx.redirectTo() - 关闭当前页面再跳转到目标页
+    //wx.switchTab()  - 跳转【底部选项卡】页
+    var id = evt.currentTarget.dataset.id
+    var title = evt.currentTarget.dataset.title
+    console.log(id, title);
+    wx.navigateTo({ //- 直接跳转到【目标页】
+      url: `/pages/detail/detail?id=${id}&title=${title}`,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
