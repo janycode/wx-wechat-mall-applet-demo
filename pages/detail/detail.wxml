@@ -2,7 +2,21 @@
 <!-- 详情页轮播 -->
 <swiper indicator-dots="{{true}}" circular="{{true}}" autoplay="{{true}}" interval="2000">
   <swiper-item wx:for="{{info.slides}}" wx:key="index">
-  <!-- aspectFit 保持缩放比，样式中设置了图片的宽高，为了让图片完整显示 -->
+    <!-- aspectFit 保持缩放比，样式中设置了图片的宽高，为了让图片完整显示 -->
     <image src="{{BASE_URL + item}}" mode="aspectFit" bindtap="handleFullScreenTap" data-current="{{BASE_URL + item}}" />
   </swiper-item>
 </swiper>
+<!-- 详情页 tabbar + sticky吸顶（需要设置子元素 100vw） -->
+<mp-sticky offset-top="0">
+  <view class="detailtabbar" style="width: 100vw;">
+    <view class="{{current === 0 ? 'active' : ''}}" bindtap="handleActive" data-index="{{0}}">商品详情</view>
+    <view class="{{current === 1 ? 'active' : ''}}" bindtap="handleActive" data-index="{{1}}">用户评价</view>
+  </view>
+</mp-sticky>
+<!-- 详情页：商品详情 -->
+<view wx:if="{{current === 0}}">
+  <view style="color: gray; margin: 10px;">{{info.feature}}</view>
+  <image wx:for="{{info.desc}}" src="{{item}}" mode="widthFix" style="width: 100%;" />
+</view>
+<!-- 详情页：用户评价 -->
+<view wx:else>2222</view>

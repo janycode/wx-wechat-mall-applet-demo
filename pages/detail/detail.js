@@ -8,7 +8,8 @@ Page({
    */
   data: {
     BASE_URL: '',
-    info: null
+    info: null,
+    current: 0,
   },
 
   /**
@@ -47,6 +48,12 @@ Page({
     wx.previewImage({
       current: evt.currentTarget.dataset.current, //当前显示图片的 http 链接 
       urls: this.data.info.slides.map(item => BASE_URL + `${item}`)  //需要预览的图片 http 链接列表
+    })
+  },
+
+  handleActive(evt) {
+    this.setData({
+      current: evt.currentTarget.dataset.index
     })
   },
 

@@ -6,3 +6,19 @@ swiper image{
 swiper {
   height: 200px;
 }
+
+.detailtabbar{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: white;
+}
+.detailtabbar view{
+  flex: 1;
+}
+
+.detailtabbar .active{
+  border-bottom: 1px solid red;
+}
