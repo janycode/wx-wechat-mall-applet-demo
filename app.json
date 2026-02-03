@@ -6,10 +6,10 @@
     "pages/center/center"
   ],
   "window": {
-    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark",
     "navigationBarTitleText": "小布旅购助手",
     "navigationBarBackgroundColor": "#14c145",
-    "backgroundTextStyle": "light"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "list": [
