@@ -125,5 +125,8 @@ Page({
 
   handleSearchEvent() {
     console.log("搜索处理");
+    wx.navigateTo({
+      url: "/pages/search/search"
+    })
   }
 })

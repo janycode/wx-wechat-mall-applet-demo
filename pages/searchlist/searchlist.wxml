@@ -1,0 +1,18 @@
+<!--pages/searchlist/searchlist.wxml-->
+<view class="sort-header">
+  <view>价格排序
+    <mp-icon type="field" icon="transfer2" color="gray" size="{{20}}" bindtap="handlePriceOrder"></mp-icon>
+  </view>
+  <view>好评排序
+    <mp-icon type="field" icon="transfer2" color="gray" size="{{20}}" bindtap="handleCommentOrder"></mp-icon>
+  </view>
+</view>
+
+<view class="goodcontainer">
+  <view wx:for="{{goodlist}}" wx:key="index" class="good" bindtap="handleGoToDetail" data-id="{{item.id}}" data-title="{{item.title}}">
+    <image src="{{BASE_URL + item.poster}}" mode="widthFix" />
+    <view>{{item.title}}</view>
+    <view>价格：<text style="color: red">￥{{item.price}}</text></view>
+    <view>好评率：<text style="color: green">{{item.goodcomment}}</text></view>
+  </view>
+</view>

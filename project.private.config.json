@@ -23,11 +23,25 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/searchlist/searchlist",
+          "pathName": "pages/searchlist/searchlist",
+          "query": "id=1&title=荣耀",
+          "scene": null,
+          "launchMode": "default"
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/detail/detail",
           "pathName": "pages/detail/detail",
           "query": "id=2&title=小米手机9",
-          "scene": null,
-          "launchMode": "default"
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

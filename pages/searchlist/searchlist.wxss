@@ -1,0 +1,22 @@
+/* pages/searchlist/searchlist.wxss */
+.goodcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.good {
+  width: 50%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+.good image{
+  width: 100%;
+}
+
+.sort-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 80rpx;
+  line-height: 80rpx;
+}
