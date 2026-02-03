@@ -1,5 +1,5 @@
 /* pages/detail/detail.wxss */
-swiper image{
+swiper image {
   width: 100%;
   height: 200px;
 }
@@ -7,7 +7,7 @@ swiper {
   height: 200px;
 }
 
-.detailtabbar{
+.detailtabbar {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -15,10 +15,52 @@ swiper {
   line-height: 100rpx;
   background-color: white;
 }
-.detailtabbar view{
+
+.detailtabbar view {
   flex: 1;
 }
-
-.detailtabbar .active{
+.detailtabbar .active {
   border-bottom: 1px solid red;
+}
+
+.user {
+  overflow: hidden;
+  padding: 20px;
+}
+.user .left {
+  float: left;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.user image {
+  width: 100rpx;
+  border-radius: 50rpx;
+}
+.user .right {
+  float: right;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.content {
+  padding: 20rpx;
+}
+.content image {
+  width: 300rpx;
+}
+
+.bottom {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.bottom view{
+  flex: 1;
+  color: white;
 }

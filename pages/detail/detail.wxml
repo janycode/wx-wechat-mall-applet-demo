@@ -19,4 +19,23 @@
   <image wx:for="{{info.desc}}" src="{{item}}" mode="widthFix" style="width: 100%;" />
 </view>
 <!-- 详情页：用户评价 -->
-<view wx:else>2222</view>
+<view wx:else>
+  <view wx:for="{{comments}}" wx:key="index" style="border-bottom: 1px solid lightgray;">
+    <view class="user">
+      <image src="{{BASE_URL + item.userImageUrl}}" mode="widthFix" class="left" />
+      <view class="left">{{item.nickname}}</view>
+      <view class="right">{{item.creationTime}}</view>
+    </view>
+    <view class="content">{{item.content}}</view>
+    <view class="content">
+      <image src="{{BASE_URL + item.imgUrl}}" mode="widthFix" />
+    </view>
+  </view>
+</view>
+
+<!-- 底部按钮 -->
+<view class="bottom">
+  <view style="background-color: #14c145;">查看购物车</view>
+  <view style="background-color: #F76260;">加入购物车</view>
+  <view style="background-color: #ffa591;">立即购买</view>
+</view>

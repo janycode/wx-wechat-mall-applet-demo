@@ -10,6 +10,7 @@ Page({
     BASE_URL: '',
     info: null,
     current: 0,
+    comments: []
   },
 
   /**
@@ -28,6 +29,8 @@ Page({
     })
     //ajax请求详情信息
     this.getGoodDetailById(options.id)
+    //ajax请求评价信息
+    this.getGoodComment()
   },
 
   getGoodDetailById(id) {
@@ -54,6 +57,19 @@ Page({
   handleActive(evt) {
     this.setData({
       current: evt.currentTarget.dataset.index
+    })
+  },
+
+  getGoodComment() {
+    request({
+      url: "/comments"
+    }).then(res => {
+      console.log(res);
+      this.setData({
+        comments: res
+      })
+    }).catch(err => {
+      console.log(err);
     })
   },
 
