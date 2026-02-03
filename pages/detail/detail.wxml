@@ -1,2 +1,8 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<!-- 详情页轮播 -->
+<swiper indicator-dots="{{true}}" circular="{{true}}" autoplay="{{true}}" interval="2000">
+  <swiper-item wx:for="{{info.slides}}" wx:key="index">
+  <!-- aspectFit 保持缩放比，样式中设置了图片的宽高，为了让图片完整显示 -->
+    <image src="{{BASE_URL + item}}" mode="aspectFit" bindtap="handleFullScreenTap" data-current="{{BASE_URL + item}}" />
+  </swiper-item>
+</swiper>

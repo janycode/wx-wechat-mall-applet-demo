@@ -18,5 +18,18 @@
     "checkInvalidKey": true,
     "ignoreDevUnusedFiles": true
   },
-  "libVersion": "3.14.1"
+  "libVersion": "3.14.1",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
+          "query": "id=2&title=小米手机9",
+          "scene": null,
+          "launchMode": "default"
+        }
+      ]
+    }
+  }
 }
