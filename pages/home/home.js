@@ -1,3 +1,5 @@
+import request from '../../utils/request'
+
 // pages/home/home.js
 Page({
 
@@ -6,6 +8,19 @@ Page({
    */
   data: {
 
+  },
+
+  handleGetTap() {
+    request({ url: "/users" }).then((res) => {
+      console.log(res);
+    })
+  },
+  handlePostTap() {
+    request({ url: '/users' }).then(res => {
+      console.log(res);
+    }).catch(err => {
+      console.error(err);
+    })
   },
 
   /**

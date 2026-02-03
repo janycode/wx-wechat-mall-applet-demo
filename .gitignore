@@ -1,0 +1,64 @@
+# ===================== 微信开发者工具相关（核心必加）=====================
+# 工具编译/构建生成的主目录（包含编译后的代码、配置等，体积大且无需提交）
+dist/
+# 工具缓存文件（含调试、编译缓存，删除不影响开发）
+miniprogram_npm/
+# 云开发相关编译/缓存文件（云开发项目必加，非云开发可保留，无影响）
+cloudfunctions_npm/
+# 工具自动生成的配置备份/临时文件
+*.swp
+*.swo
+.DS_Store
+
+# ===================== 依赖包/第三方库 =====================
+# npm 安装的依赖包（项目依赖通过 package.json 管理，无需提交node_modules）
+node_modules/
+# yarn 缓存（使用yarn管理依赖时生成）
+.yarn/
+yarn.lock
+
+# ===================== 编辑器/IDE 缓存文件 =====================
+# VS Code 编辑器缓存（最常用，必加）
+.vscode/
+# IntelliJ IDEA/WebStorm 缓存（使用IDEA系列工具开发时的配置）
+.idea/
+*.iml
+# WebStorm 临时文件
+webstorm.config.js
+# Sublime Text 缓存
+*.sublime-*
+# Vim 编辑器缓存
+*.vim
+
+# ===================== 系统/临时文件 =====================
+# Windows 系统临时文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# Mac 系统隐藏文件（必加，避免提交系统自动生成的文件）
+.DS_Store
+.AppleDouble
+.LSOverride
+# Linux 系统临时文件
+*~
+# 通用临时文件/日志文件
+*.tmp
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===================== 可选过滤（根据项目需求取舍）=====================
+# 本地配置文件（若有自定义的本地开发配置，无需提交到仓库）
+local.config.js
+local.json
+# 测试/模拟数据（本地测试用的临时数据，非项目核心内容）
+mock/
+test/
+# 打包后的压缩包/安装包
+*.zip
+*.rar
+*.apk
+*.ipa
