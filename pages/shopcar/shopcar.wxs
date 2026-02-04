@@ -1,3 +1,4 @@
+// pages/shopcar/shopcar.wxs
 function sum(list) {
   var total = 0
   for (var i  = 0; i < list.length; i++) {

@@ -6,6 +6,7 @@
 }
 .cellcontent {
   display: flex;
+  font-size: 14px;
 }
 .cellcontent checkbox {
   line-height: 100rpx;
@@ -19,6 +20,7 @@
   display: inline-block;
   text-align: center;
   border: 1px solid lightgray;
+  font-size: 14px;
 }
 
 .footer {
