@@ -1,2 +1,40 @@
 <!--pages/shopcar/shopcar.wxml-->
-<text>pages/shopcar/shopcar.wxml</text>
+<mp-cells title="配送至默认地址：xxx" footer="左滑可以删除">
+  <!-- <mp-cell value="标题文字" footer="说明文字"></mp-cell>
+    <mp-cell>
+        <view>标题文字（使用slot）</view>
+        <view slot="footer">说明文字</view>
+    </mp-cell> -->
+  <mp-cell wx:for="{{cartlist}}" wx:key="id">
+  <!-- 左滑删除组件 mp-slideview -->
+    <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonDeleteTap" data-item="{{item}}">
+      <view class="content">
+        <view class="cellcontent">
+          <checkbox checked="{{item.checked}}" bindtap="handleCheckedTap" data-item="{{item}}" />
+          <!-- image 的 mode 不能使用 widthFix 其他都可以，否则会影响左滑删除 -->
+          <image src="{{BASE_URL + item.good.poster}}" mode="aspectFit" />
+          <view>
+            <view>{{item.good.title}}</view>
+            <view style="color: red">￥{{item.good.price}}</view>
+          </view>
+        </view>
+        <view slot="footer" class="cellfooter">
+          <text bindtap="handleMinusTap" data-item="{{item}}">-</text>
+          <text>{{item.number}}</text>
+          <text bindtap="handleAddTap" data-item="{{item}}">+</text>
+        </view>
+      </view>
+    </mp-slideview>
+  </mp-cell>
+</mp-cells>
+
+<wxs src="./shopcar.wxs" module="calObj"></wxs>
+<view class="footer">
+  <!-- 全选组件 -->
+  <checkbox-group bindchange="handleAllChecked">
+    <checkbox checked="{{isAllChecked}}" />
+  </checkbox-group>
+  <view>全选</view>
+  <view style="position:fixed; right: 180rpx; color: red; font-size: 20px;">￥{{calObj.sum(cartlist)}}</view>
+  <button type="primary" size="mini">去结算</button>
+</view>

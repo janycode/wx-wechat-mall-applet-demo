@@ -23,11 +23,18 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/category/category",
-          "pathName": "pages/category/category",
+          "name": "pages/shopcar/shopcar",
+          "pathName": "pages/shopcar/shopcar",
           "query": "",
           "scene": null,
           "launchMode": "default"
+        },
+        {
+          "name": "pages/category/category",
+          "pathName": "pages/category/category",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         },
         {
           "name": "pages/searchlist/searchlist",

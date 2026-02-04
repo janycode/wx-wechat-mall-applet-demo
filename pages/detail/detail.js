@@ -80,7 +80,60 @@ Page({
     // 如果没有手机号，判断是否有授权 token，如果有引导手机号绑定
     // 没有授权 token ，引导用户进入授权页面
     checkAuth(() => {
-      console.log("准备加入购物车");
+      console.log("加入购物车");
+      // 从缓存获取数据，增加非空判断，避免报错
+      const tokenInfo = wx.getStorageSync("token") || {};
+      const tel = wx.getStorageSync("tel");
+      const { info } = this.data;
+      // 基础数据校验
+      if (!tel || !info?.id || !tokenInfo.nickName) {
+        wx.showToast({ title: '数据异常，请重新进入', icon: 'error', duration: 2000 });
+        return;
+      }
+      const { nickName } = tokenInfo;
+      const goodId = info.id;
+
+      request({ url: "/carts", data: { tel, goodId, username: nickName } })
+        .then(res => {
+          const cartList = res || [];
+          // 场景1：购物车无该商品 → 新增
+          if (cartList.length === 0) {
+            return request({
+              url: "/carts",
+              method: "post",
+              data: { username: nickName, tel, goodId, number: 1, checked: false }
+            });
+          }
+          // 场景2：购物车有该商品 → 更新数量
+          else {
+            const targetCart = cartList[0];
+            return request({
+              url: `/carts/${targetCart.id}`,
+              method: "put",
+              data: { ...targetCart, number: targetCart.number + 1 }
+            });
+          }
+        })
+        // 统一成功回调：新增/更新都触发成功提示
+        .then((res) => {
+          wx.showToast({
+            title: '加入购物车成功',
+            icon: 'success',
+            duration: 2000,
+            mask: true // 增加遮罩，防止用户连续点击
+          });
+        })
+        // 全局异常捕获：请求失败时提示用户
+        .catch(err => {
+          console.error('加入购物车失败：', err);
+          wx.showToast({ title: '加入购物车失败，请重试', icon: 'error', duration: 2000 });
+        });
+    });
+  },
+
+  handleGoToShopCar() {
+    wx.switchTab({
+      url: "/pages/shopcar/shopcar"
     })
   },
 

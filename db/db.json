@@ -728,7 +728,7 @@
     {
       "username": "饮冰",
       "tel": "111",
-      "goodId": 1,
+      "goodId": "1",
       "number": 3,
       "checked": false,
       "id": "1"
@@ -736,7 +736,7 @@
     {
       "username": "饮冰",
       "tel": "111",
-      "goodId": 10,
+      "goodId": "10",
       "number": 1,
       "checked": false,
       "id": "2"
@@ -744,7 +744,7 @@
     {
       "username": "饮冰",
       "number": 2,
-      "goodId": 14,
+      "goodId": "14",
       "tel": "111",
       "checked": true,
       "id": "3"
@@ -752,7 +752,7 @@
     {
       "username": "饮冰",
       "tel": "111",
-      "goodId": 16,
+      "goodId": "16",
       "number": 5,
       "checked": false,
       "id": "5"
@@ -760,10 +760,34 @@
     {
       "username": "饮冰",
       "tel": "456",
-      "goodId": 1,
+      "goodId": "1",
       "number": 3,
       "checked": false,
       "id": "6"
+    },
+    {
+      "username": "微信用户",
+      "tel": "18912341234",
+      "goodId": "2",
+      "number": 10,
+      "checked": true,
+      "id": "3143"
+    },
+    {
+      "username": "微信用户",
+      "tel": "18912341234",
+      "goodId": "1",
+      "number": 1,
+      "checked": true,
+      "id": "58b9"
+    },
+    {
+      "username": "微信用户",
+      "tel": "18912341234",
+      "goodId": "4",
+      "number": 1,
+      "checked": true,
+      "id": "7907"
     }
   ],
   "users": [

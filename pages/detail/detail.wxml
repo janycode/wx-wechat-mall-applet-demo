@@ -35,7 +35,7 @@
 
 <!-- 底部按钮 -->
 <view class="bottom">
-  <view style="background-color: #14c145;">查看购物车</view>
+  <view style="background-color: #14c145;" bindtap="handleGoToShopCar">查看购物车</view>
   <view style="background-color: #F76260;" bindtap="handleAddShopCar">加入购物车</view>
   <view style="background-color: #ffa591;">立即购买</view>
 </view>
