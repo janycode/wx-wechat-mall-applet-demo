@@ -1,1 +1,29 @@
 /* pages/category/category.wxss */
+/* page 拷贝过来的样式 */
+page {
+  background-color: #FFFFFF;
+  height: 100%;
+}
+/* 标题 */
+.item-title {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.vtabs-content-item {
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 100vh; 可以让每个分类单独一屏，会有样式问题 */
+}
+.vtabs-content-item .item {
+  width: 50%;
+  height: 300rpx;   /* 300rpx 社区文档建议，可以正常显示 */
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.item image {
+  width: 200rpx;
+}
+.item view {
+  font-size: 13px;
+  text-align: center;
+}

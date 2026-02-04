@@ -23,11 +23,18 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/category/category",
+          "pathName": "pages/category/category",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
+        },
+        {
           "name": "pages/searchlist/searchlist",
           "pathName": "pages/searchlist/searchlist",
           "query": "id=1&title=荣耀",
-          "scene": null,
-          "launchMode": "default"
+          "launchMode": "default",
+          "scene": null
         },
         {
           "name": "pages/search/search",

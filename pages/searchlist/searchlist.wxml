@@ -1,10 +1,10 @@
 <!--pages/searchlist/searchlist.wxml-->
 <view class="sort-header">
   <view>价格排序
-    <mp-icon type="field" icon="transfer2" color="gray" size="{{20}}" bindtap="handlePriceOrder"></mp-icon>
+    <mp-icon type="field" icon="transfer2" color="{{priceOrder ? 'green' : 'blue'}}" size="{{20}}" bindtap="handlePriceOrder"></mp-icon>
   </view>
   <view>好评排序
-    <mp-icon type="field" icon="transfer2" color="gray" size="{{20}}" bindtap="handleCommentOrder"></mp-icon>
+    <mp-icon type="field" icon="transfer2" color="{{commentOrder ? 'green' : 'blue'}}" size="{{20}}" bindtap="handleCommentOrder"></mp-icon>
   </view>
 </view>
 

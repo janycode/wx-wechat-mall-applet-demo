@@ -1,3 +1,5 @@
+const { request } = require("../../utils/request")
+
 // pages/category/category.js
 Page({
 
@@ -5,14 +7,45 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    BASE_URL: '',
+    vtabs: [],
+    activeTab: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    // 获取小程序全局实例，将全局基地址赋值到页面data
+    this.setData({
+      BASE_URL: getApp().globalData.BASE_URL
+    });
+    request({ url: "/categories?_embed=goods" }).then(res => {
+      console.log(res);
+      this.setData({
+        vtabs: res
+      })
+    }).catch(err => {
+      console.error(err);
+    })
+  },
 
+  // 点击分类事件
+  onTabCLick(e) {
+    const index = e.detail.index
+    console.log('tabClick', index)
+  },
+  // 滑动右侧列表触发事件
+  onChange(e) {
+    const index = e.detail.index
+    console.log('change', index)
+  },
+  // 点击右侧商品触发事件
+  handleGoodTap(evt) {
+    const { id, title } = evt.currentTarget.dataset
+    console.log(id, title);
+    //跳转详情页
+    wx.navigateTo({ url: `/pages/detail/detail?id=${id}&title=${title}`})
   },
 
   /**
