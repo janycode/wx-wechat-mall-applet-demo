@@ -1,3 +1,5 @@
+import checkAuth from "../../utils/authTool";
+
 // pages/center/center.js
 Page({
 
@@ -26,7 +28,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    checkAuth(() => {
+      console.log("进入我的");
+    })
   },
 
   /**

@@ -1,3 +1,4 @@
+const { default: checkAuth } = require("../../utils/authTool");
 const { request, BASE_URL } = require("../../utils/request");
 
 // pages/detail/detail.js
@@ -70,6 +71,16 @@ Page({
       })
     }).catch(err => {
       console.log(err);
+    })
+  },
+
+  // 加入购物车
+  handleAddShopCar() {
+    // 判断是否有手机号信息，如果有，直接加入
+    // 如果没有手机号，判断是否有授权 token，如果有引导手机号绑定
+    // 没有授权 token ，引导用户进入授权页面
+    checkAuth(() => {
+      console.log("准备加入购物车");
     })
   },
 

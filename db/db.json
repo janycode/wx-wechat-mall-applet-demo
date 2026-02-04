@@ -1,29 +1,29 @@
 {
   "recommends": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Thinkpad",
       "url": "/images/0/a.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "厨卫品类日",
       "url": "/images/0/b.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "超级品牌日",
       "url": "/images/0/c.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "一次性口罩",
       "url": "/images/0/d.jpg"
     }
   ],
   "goods": [
     {
-      "id": 1,
+      "id": "1",
       "categoryId": "1",
       "title": "荣耀9X",
       "feature": "麒麟810 4000mAh续航 4800万超清夜拍 6.59英寸升降全面屏 全网通6GB+64GB 魅海蓝",
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "小米（MI） Redmi 8A",
       "categoryId": "4",
       "feature": "超长续航 震撼大音量 AI人脸解锁",
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "三星 Galaxy S20+",
       "categoryId": "7",
       "feature": "5G(SM-G9860)双模5G 骁龙865 120Hz超感屏 8K视频 游戏手机 12GB+128GB 幻游黑",
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "荣耀20S",
       "categoryId": "1",
       "feature": "3200万人像超级夜景 4800万超广角AI三摄 麒麟810 全网通版8GB+128GB 蝶羽白",
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "荣耀20青春版",
       "categoryId": "1",
       "feature": "AMOLED屏幕指纹 4000mAh大电池 20W快充 4800万 手机 6GB+64GB 冰岛幻境",
@@ -229,7 +229,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Apple iPhone 11",
       "categoryId": "3",
       "feature": "配备A13 Bionic,搭配4核心GPU",
@@ -261,7 +261,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "vivo U3x",
       "categoryId": "5",
       "feature": "6GB+64GB 赤茶红 5000mAh大电池 18W双引擎闪充 超广角AI三摄 骁龙665处理器 全网通4G手机",
@@ -298,7 +298,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "荣耀Play3",
       "categoryId": "1",
       "feature": "6.39英寸魅眼全视屏 4000mAh大电池 真4800万AI三摄 麒麟710F自研芯片 畅玩全网通6GB+64GB 幻夜黑",
@@ -336,7 +336,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "小米（MI） Redmi Note8",
       "categoryId": "4",
       "feature": "品质小金刚 4800万四摄 骁龙665",
@@ -374,7 +374,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "华为 HUAWEI Mate 30",
       "categoryId": "2",
       "feature": "5G 麒麟990 4000万超感光徕卡影像双超级快充8GB+128GB亮黑色5G全网通游戏手机",
@@ -427,7 +427,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "荣耀20 PRO",
       "categoryId": "1",
       "feature": "4800万全焦段AI四摄 双光学防抖 麒麟980 全网通4G 8GB+128GB 幻夜星河 拍照手机",
@@ -461,7 +461,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "华为（HUAWEI） nova 5 Pro",
       "categoryId": "2",
       "feature": "超级夜景/AI四摄/麒麟980",
@@ -505,7 +505,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Apple iPhone Xs Max",
       "categoryId": "3",
       "feature": "面容ID 双卡双待",
@@ -537,7 +537,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "vivo iQOO Neo 855版",
       "categoryId": "5",
       "feature": "HDR10显示 骁龙855 大存储",
@@ -568,7 +568,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "华为 HUAWEI 畅享8e青春",
       "categoryId": "2",
       "feature": "2GB+32GB全面屏 黑色 全网通版 移动联通电信4G手机 双卡双待",
@@ -595,7 +595,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "海信(Hisense) 阅读手机A5",
       "categoryId": "6",
       "feature": "5.84英寸护眼水墨屏 墨水屏 电纸书 阅读器 尊享版4GB+64GB(墨玉黑) 全网通4G手机",
@@ -647,7 +647,8 @@
       "score": "4",
       "userImageUrl": "/avatar/avatar1.jpg",
       "nickname": "铁锤",
-      "imgUrl": "/comments/comment1.jpg"
+      "imgUrl": "/comments/comment1.jpg",
+      "id": "c76e"
     },
     {
       "content": "质量很好",
@@ -655,7 +656,8 @@
       "score": "5",
       "userImageUrl": "/avatar/avatar2.jpg",
       "nickname": "无情",
-      "imgUrl": "/comments/comment2.jpg"
+      "imgUrl": "/comments/comment2.jpg",
+      "id": "8ecc"
     },
     {
       "content": "手机用了觉得很不错，商品质量好，发货也挺快的，总之就是很赞了，东西已经收到！手感不错！用料扎实！质量很好！平常用基本没有问题！",
@@ -663,7 +665,8 @@
       "score": "3",
       "userImageUrl": "/avatar/avatar3.jpg",
       "nickname": "诸葛",
-      "imgUrl": "/comments/comment3.jpg"
+      "imgUrl": "/comments/comment3.jpg",
+      "id": "ebae"
     },
     {
       "content": "屏幕音效：不错用着",
@@ -671,7 +674,8 @@
       "score": "5",
       "userImageUrl": "/avatar/avatar4.jpg",
       "nickname": "西门",
-      "imgUrl": "/comments/comment4.jpg"
+      "imgUrl": "/comments/comment4.jpg",
+      "id": "8ed6"
     },
     {
       "content": "快递物流很快，手机质量也不错，好评！",
@@ -679,42 +683,43 @@
       "score": "4",
       "userImageUrl": "/avatar/avatar5.jpg",
       "nickname": "墩子",
-      "imgUrl": "/comments/comment5.jpg"
+      "imgUrl": "/comments/comment5.jpg",
+      "id": "9b5d"
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "title": "荣耀",
       "class": "国产"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "华为",
       "class": "国产"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "苹果",
       "class": "国外"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "小米",
       "class": "国产"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "vivo",
       "class": "国产"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "海信",
       "class": "国产"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "三星",
       "class": "国外"
     }
@@ -726,7 +731,7 @@
       "goodId": 1,
       "number": 3,
       "checked": false,
-      "id": 1
+      "id": "1"
     },
     {
       "username": "饮冰",
@@ -734,7 +739,7 @@
       "goodId": 10,
       "number": 1,
       "checked": false,
-      "id": 2
+      "id": "2"
     },
     {
       "username": "饮冰",
@@ -742,7 +747,7 @@
       "goodId": 14,
       "tel": "111",
       "checked": true,
-      "id": 3
+      "id": "3"
     },
     {
       "username": "饮冰",
@@ -750,7 +755,7 @@
       "goodId": 16,
       "number": 5,
       "checked": false,
-      "id": 5
+      "id": "5"
     },
     {
       "username": "饮冰",
@@ -758,7 +763,7 @@
       "goodId": 1,
       "number": 3,
       "checked": false,
-      "id": 6
+      "id": "6"
     }
   ],
   "users": [
@@ -771,7 +776,7 @@
       "country": "China",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epAvz1Q85rbZnRmKicDicF3uwySCicaY25pU2XKqItGzeQf3y1ibsr6raqnLnB2jBGrj7mzESGCHEO83Q/132",
       "tel": "111",
-      "id": 1
+      "id": "1"
     },
     {
       "nickName": "饮冰",
@@ -782,7 +787,7 @@
       "country": "China",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epAvz1Q85rbZnRmKicDicF3uwySCicaY25pU2XKqItGzeQf3y1ibsr6raqnLnB2jBGrj7mzESGCHEO83Q/132",
       "tel": "123",
-      "id": 2
+      "id": "2"
     },
     {
       "nickName": "饮冰",
@@ -793,7 +798,7 @@
       "country": "China",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epAvz1Q85rbZnRmKicDicF3uwySCicaY25pU2XKqItGzeQf3y1ibsr6raqnLnB2jBGrj7mzESGCHEO83Q/132",
       "tel": "124",
-      "id": 3
+      "id": "3"
     },
     {
       "nickName": "饮冰",
@@ -804,7 +809,7 @@
       "country": "China",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epAvz1Q85rbZnRmKicDicF3uwySCicaY25pU2XKqItGzeQf3y1ibsr6raqnLnB2jBGrj7mzESGCHEO83Q/132",
       "tel": "345",
-      "id": 4
+      "id": "4"
     },
     {
       "nickName": "饮冰",
@@ -815,7 +820,7 @@
       "country": "China",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epAvz1Q85rbZnRmKicDicF3uwySCicaY25pU2XKqItGzeQf3y1ibsr6raqnLnB2jBGrj7mzESGCHEO83Q/132",
       "tel": "456",
-      "id": 5
+      "id": "5"
     },
     {
       "nickName": "呆呆",
@@ -826,7 +831,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "sdfsf",
-      "id": 6
+      "id": "6"
     },
     {
       "nickName": "呆呆",
@@ -837,7 +842,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "dssssssf",
-      "id": 7
+      "id": "7"
     },
     {
       "nickName": "呆呆",
@@ -848,7 +853,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "fddf",
-      "id": 8
+      "id": "8"
     },
     {
       "nickName": "呆呆",
@@ -859,7 +864,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "111",
-      "id": 9
+      "id": "9"
     },
     {
       "nickName": "呆呆",
@@ -870,7 +875,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "112",
-      "id": 10
+      "id": "10"
     },
     {
       "nickName": "呆呆",
@@ -881,7 +886,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "afas",
-      "id": 11
+      "id": "11"
     },
     {
       "nickName": "呆呆",
@@ -892,7 +897,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "123",
-      "id": 12
+      "id": "12"
     },
     {
       "nickName": "呆呆",
@@ -903,7 +908,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "ss",
-      "id": 13
+      "id": "13"
     },
     {
       "nickName": "呆呆",
@@ -914,7 +919,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "aswsdffsd",
-      "id": 14
+      "id": "14"
     },
     {
       "nickName": "呆呆",
@@ -925,7 +930,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "gffd",
-      "id": 15
+      "id": "15"
     },
     {
       "nickName": "呆呆",
@@ -936,7 +941,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "sdcc",
-      "id": 16
+      "id": "16"
     },
     {
       "nickName": "呆呆",
@@ -947,7 +952,19 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/LkGyjLJysc2TvE52YWofj348buKS7nSI8YicggZsQaFwJicjLlwicJoa66eJyC26uVatWzzjBFhrb6ckvicazX3iaXA/132",
       "tel": "rttr",
-      "id": 17
+      "id": "17"
+    },
+    {
+      "id": "16f9",
+      "nickName": "微信用户",
+      "gender": 0,
+      "language": "",
+      "city": "",
+      "province": "",
+      "country": "",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132",
+      "is_demote": true,
+      "tel": "18912341234"
     }
   ]
 }
